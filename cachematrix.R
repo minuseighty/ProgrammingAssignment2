@@ -1,5 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The overall functions take a matrix input and stores it then looks to build a inverse
+## the next time you want the inverse of that same matrix you can call the cached value
+## instead of wasting time running the inverse again
 
 ## This function created stores a list of functions
 
