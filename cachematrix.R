@@ -2,18 +2,18 @@
 ## the next time you want the inverse of that same matrix you can call the cached value
 ## instead of wasting time running the inverse again
 
+
 ## This function created stores a list of functions
 
 makeCacheMatrix <- function(x = matrix()) {
-    
+    i <- NULL  ##initalize to NULL so the object exists
     get <- function() x  ##returns matrix stored in main function
-    setInverse <- function(inverse) i <<- inverse ##stores value of inverse"
+    setInverse <- function(inv) i <<- inv ##stores value of inverse"
     getInverse <- function() i ## gives back the "inverse" value
     
     ##  stores the above 3 functions so we can assign the function
     ## an object and give it all 3 functions
     list(get = get, setInverse = setInverse, getInverse = getInverse)
-    
 }
 
 
@@ -35,7 +35,4 @@ cacheSolve <- function(x, ...) {
         x$setInverse(i)  ## give the setInverse function the inverse
         i  ##auto print the inverse
     }
-    
-    
-  
 }
