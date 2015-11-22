@@ -26,7 +26,7 @@ cacheSolve <- function(x, ...) {
     i <- x$getInverse() ##get inverse from makeCacehMatrix function
     
     if (!is.null(i)) {   ## test the existance
-        message("geeting cached data")
+        message("getting cached data")
         return(i) #return the existing "inverse"
     } else {
         ## when "inverse" doesn't exist
